@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+  <head>
+    <title>Mana lapa</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}"/>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <nav>
+          <ul class="menu">
+            <li {% if active_page == 'index' %}
+                    class="active"
+                {% endif %}><a href="/">Chat</a></li>
+            <li {% if active_page == 'health' %}
+                    class="active"
+                {% endif %}
+            
+            ><a href="/health">Health</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <div class="container">
+      {% block saturs %}
+
+      {% endblock %}
+    </div>
+  </body>
+</html>

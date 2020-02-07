@@ -1,0 +1,83 @@
+body {
+  margin: 0 auto;
+  max-width: 800px;
+  padding: 0 20px;
+  background-color: #ccffcc;
+
+}
+
+.container {
+  border: 2px solid #dedede;
+  background-color: #f1f1f1;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+
+
+.darker {
+  border-color: #ccc;
+  background-color: #ddd;
+}
+
+.big {
+  border-color: #333333;
+  background-color: #ddd;
+}
+
+.container::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.time-right {
+  float: right;
+  color: #aaa;
+}
+
+.time-left {
+  float: left;
+  color: #999;
+}
+
+/*enter text*/
+.form{
+  background: gainsboro;
+
+}
+
+    
+.form-inner{
+  height: 60px;
+  margin: 12px;
+  border-radius: 2px;
+  background: whitesmoke;
+
+
+}
+    
+.myButton {
+	box-shadow: 0px 10px 14px -7px #3dc21b;
+	background:linear-gradient(to bottom, #44c767 5%, #5cbf2a 100%);
+	background-color:#44c767;
+	border-radius:8px;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:20px;
+	font-weight:bold;
+	padding:13px 32px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #2f6627;
+}
+.myButton:hover {
+	background:linear-gradient(to bottom, #5cbf2a 5%, #44c767 100%);
+	background-color:#5cbf2a;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+

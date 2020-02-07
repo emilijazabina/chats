@@ -1,0 +1,42 @@
+{% extends "layout.html" %}
+
+{% set active_page = 'home' %}
+
+{% block saturs %}
+    <script src="script.js"></script>
+    <h1>Chat</h1>
+    <div class="container big">
+      
+      <div class="container">
+        <p>Hello. How are you today?</p>
+        <span class="time-right">11:00</span>
+        <span class="time-left">Guest_1  </span>
+      </div>
+
+      <div class="container darker">
+        <p>Hey! I'm fine. Thanks for asking!</p>
+        <span class="time-left">11:01</span>
+        <span class="time-right">Guest_2 </span>
+
+      </div>
+
+      <div class="container">
+        <p>Sweet! So, what do you wanna do today?</p>
+        <span class="time-right">11:02</span>
+        <span class="time-left">Guest_1</span>
+
+      </div>
+
+      <div class="container darker">
+        <p>Nah, I dunno. Play soccer.. or learn more coding perhaps?</p>
+        <span class="time-left">11:05</span>
+        <span class="time-right">Guest_2</span>
+
+      </div>
+      <div class="container">
+        <div class="form"> </div>
+        <input class="form-inner"></input>
+        <a href="#" class="myButton">Send</a>
+    </div>
+    </div>
+{% endblock %}
